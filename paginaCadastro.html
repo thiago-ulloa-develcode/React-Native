@@ -4,12 +4,18 @@
             body {
                 background-color: black;
                 margin: 0px;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
             input {
                 width: 100%;
                 padding: 12px 20px;
                 margin: 8px 0;
                 border-radius: 10px;
+                border: 0;
             }
             button {
                 width: 100%;
@@ -20,28 +26,40 @@
                 cursor: pointer;
                 font-size: 16px;
                 border-radius: 10px;
+                border: 0;
             }
             img {
-                width: 100%;
-                background-color: #11152A;
+                height: 90px;
+                margin: auto;
             }
             .container {
-                display: flex;
-                background-color: rgb(192, 192, 192);
-                width: 50%;
-                padding: 90px 56px;
-                justify-content: center;
-                align-items: center;
-                border-radius: 10px;
+                margin: auto;
+                text-align: center;
+                background-color: rgb(47, 0, 86);
+                width: 33%;
+                border-radius: 5px;
+            }
+            .logo-container {
+                width: 100%;
+                background-color: #11152A;
+                padding: 10px 0;
+            }
+            .body {
+                padding: 15px;
             }
         </style>
     </head>
     <body>
         <div class="container">
-            <div><img src="logodevelcode.png">
-            <div><input type="text" name=="name" placeholder="Nome">
-            <div><input type="Password" name="password" placeholder="Senha"><input type="Password" name="password2" placeholder="Senha">
-            <div><button type="button">Cadastrar</button>
+            <div class="logo-container">
+                <img src="logodevelcode.png">
+            </div>
+            <div class="body">
+            <div><input type="text" name=="name" placeholder="Nome"></div>
+            <div><input type="Password" name="password" placeholder="Senha"></div>
+            <div><input type="Password" name="password2" placeholder="Senha"></div>
+            <div><button type="button">Cadastrar</button></div>
         </div>
+    </div>  
     </body>
 </html>
